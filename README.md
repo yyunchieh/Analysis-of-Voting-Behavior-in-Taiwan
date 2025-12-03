@@ -167,7 +167,7 @@ pip install pandas numpy matplotlib seaborn scikit-learn xgboost shap joblib jup
 ### Installation
 ```bash
 # Clone or download the repository
-cd Taiwan_election_prediction
+cd Analysis-of-Voting-Behavior-in-Taiwan 
 
 # Install dependencies
 pip install -r requirements.txt
