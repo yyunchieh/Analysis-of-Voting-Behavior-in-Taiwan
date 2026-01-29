@@ -1,11 +1,16 @@
 # Taiwan 2024 Presidential Election: Socioeconomic Analysis
 
-Analyzing the relationship between socioeconomic factors and voting patterns in Taiwan's 2024 presidential election, providing actionable insights for campaign strategies.
-
-
 ![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
-
 ---
+
+## Project Approach
+
+**This is an interpretability-focused study, not a predictive modeling project.**
+
+Given the constraint of district-level data (N=20), this analysis prioritizes:
+- Understanding feature-voting relationships (SHAP analysis)
+- Identifying actionable district typologies (K-means clustering)
+- Extracting policy-relevant insights for campaign strategies
 
 ## Project Overview
 
@@ -73,14 +78,19 @@ The primary value lies in:
 | Age_0_14_Pct      | Youth population percentage   | 0.0320     | Higher → decreases Lai-Hsiao prob |
 | Age_65_Plus_Pct   | Elderly population percentage | 0.0314     | Higher → increases Lai-Hsiao prob |
 
+### 4. Cluster Validation
 
+  - Silhouette Score: 0.363 
+  - Visual inspection (PCA): Clean separation along PC1 (59.72% variance)
+  - Domain validation: Clusters align with known Taiwan urban-rural divide
+  
 ### Limitations
+
 **Why Prediction is Limited:**
 - N = 20 (too small for reliable ML predictions)
 - Class imbalance (Lai-Hsiao won 70% of districts)
 - Complex political factors not captured (party identification, cross-strait stance, candidate charisma)
 - High heterogeneity across districts
-
   
 ---
 
